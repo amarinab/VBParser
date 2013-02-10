@@ -67,7 +67,7 @@ import cager.parser.VBParser;
  * @author paul
  *
  */
-public class SimpleTest3
+public class SimpleTest3 
 {
 	//TODO: Implementar estructura de control de índices de Identificadores.
 	private int idCount = 0;
