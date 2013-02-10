@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="diagrama de clases" size="1906,1817" id="cager.parser" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledX="133" scrolledY="150" tag="10" key="32303037303533312D3130205642506172736572">
+  <children xsi:type="editmodel:ClassEditModel" name="ASCII_CharStream" location="255,1088" size="164,517" id="cager.parser/ASCII_CharStream" runTimeClassModel="ReInit(Ljava.io.Reader;III),BeginToken(),ASCII_CharStream(Ljava.io.Reader;II),adjustBeginLineColumn(II),getEndColumn(),getBeginLine(),Done(),GetImage(),ASCII_CharStream(Ljava.io.InputStream;II),bufsize,GetSuffix(I),ReInit(Ljava.io.InputStream;III),readChar(),tokenBegin,ASCII_CharStream(Ljava.io.Reader;III),ReInit(Ljava.io.Reader;II),getEndLine(),available,getLine(),getColumn(),backup(I),getBeginColumn(),ASCII_CharStream(Ljava.io.InputStream;III),bufpos,ReInit(Ljava.io.InputStream;II),staticFlag">
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="available" id="cager.parser/ASCII_CharStream#available"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bufpos" id="cager.parser/ASCII_CharStream#bufpos"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bufsize" id="cager.parser/ASCII_CharStream#bufsize"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="staticFlag" id="cager.parser/ASCII_CharStream#staticFlag"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tokenBegin" id="cager.parser/ASCII_CharStream#tokenBegin"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="141,378">
+      <children xsi:type="editmodel:MethodEditModel" name="ASCII_CharStream" id="cager.parser/ASCII_CharStream#ASCII_CharStream(Ljava.io.Reader;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASCII_CharStream" id="cager.parser/ASCII_CharStream#ASCII_CharStream(Ljava.io.InputStream;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASCII_CharStream" id="cager.parser/ASCII_CharStream#ASCII_CharStream(Ljava.io.Reader;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASCII_CharStream" id="cager.parser/ASCII_CharStream#ASCII_CharStream(Ljava.io.InputStream;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="BeginToken" id="cager.parser/ASCII_CharStream#BeginToken()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Done" id="cager.parser/ASCII_CharStream#Done()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="GetImage" id="cager.parser/ASCII_CharStream#GetImage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="GetSuffix" id="cager.parser/ASCII_CharStream#GetSuffix(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ReInit" id="cager.parser/ASCII_CharStream#ReInit(Ljava.io.Reader;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ReInit" id="cager.parser/ASCII_CharStream#ReInit(Ljava.io.InputStream;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ReInit" id="cager.parser/ASCII_CharStream#ReInit(Ljava.io.Reader;II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ReInit" id="cager.parser/ASCII_CharStream#ReInit(Ljava.io.InputStream;III)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="adjustBeginLineColumn" id="cager.parser/ASCII_CharStream#adjustBeginLineColumn(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="backup" id="cager.parser/ASCII_CharStream#backup(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBeginColumn" id="cager.parser/ASCII_CharStream#getBeginColumn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBeginLine" id="cager.parser/ASCII_CharStream#getBeginLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getColumn" id="cager.parser/ASCII_CharStream#getColumn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEndColumn" id="cager.parser/ASCII_CharStream#getEndColumn()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEndLine" id="cager.parser/ASCII_CharStream#getEndLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLine" id="cager.parser/ASCII_CharStream#getLine()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="readChar" id="cager.parser/ASCII_CharStream#readChar()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTArguments" location="508,503" size="135,103" id="cager.parser/ASTArguments" runTimeClassModel="ASTArguments(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTArguments(Lcager.parser.VBParser;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArguments" id="cager.parser/ASTArguments#ASTArguments(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArguments" id="cager.parser/ASTArguments#ASTArguments(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTArguments#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTArguments-Standard::Derive->cager.parser/SimpleNode" source="//@children.1" target="//@children.17" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="135,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,172"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTArguments" source="//@children.1" target="//@children.19/@sourceConnections.1" targetEnd="//@children.1/@sourceConnections.1/@children.1" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="67,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTConstDeclaration" location="779,1110" size="176,103" id="cager.parser/ASTConstDeclaration" runTimeClassModel="ASTConstDeclaration(I),ASTConstDeclaration(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTConstDeclaration" id="cager.parser/ASTConstDeclaration#ASTConstDeclaration(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTConstDeclaration" id="cager.parser/ASTConstDeclaration#ASTConstDeclaration(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTConstDeclaration#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTConstDeclaration-Standard::Derive->cager.parser/ASTStatement" source="//@children.2" target="//@children.16" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="3,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="134,231"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTConstDeclaration" source="//@children.2" target="//@children.5/@sourceConnections.1" targetEnd="//@children.2/@sourceConnections.1/@children.1" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTArgSpec" location="373,488" size="121,103" id="cager.parser/ASTArgSpec" runTimeClassModel="ASTArgSpec(Lcager.parser.VBParser;I),ASTArgSpec(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArgSpec" id="cager.parser/ASTArgSpec#ASTArgSpec(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArgSpec" id="cager.parser/ASTArgSpec#ASTArgSpec(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTArgSpec#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTArgSpec-Standard::Derive->cager.parser/SimpleNode" source="//@children.3" target="//@children.17" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,16" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,159"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="cager.parser/SimpleNode&lt;-cager.parser/ASTArgSpec" source="//@children.3" target="//@children.19/@sourceConnections.1" targetEnd="//@children.3/@sourceConnections.1/@children.1" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="60,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTDeclare" location="1408,503" size="117,103" id="cager.parser/ASTDeclare" runTimeClassModel="ASTDeclare(I),ASTDeclare(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDeclare" id="cager.parser/ASTDeclare#ASTDeclare(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDeclare" id="cager.parser/ASTDeclare#ASTDeclare(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTDeclare#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTDeclare-Standard::Derive->cager.parser/SimpleNode" source="//@children.4" target="//@children.17" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="17,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,209"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTDeclare" source="//@children.4" target="//@children.19/@sourceConnections.1" targetEnd="//@children.4/@sourceConnections.1/@children.1" sourceEnd="//@children.4/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="58,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTAssignment" location="227,1072" size="140,139" id="cager.parser/ASTAssignment" runTimeClassModel="ASTAssignment(I),ASTAssignment(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),getLHS(),getRHS()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="106,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTAssignment" id="cager.parser/ASTAssignment#ASTAssignment(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTAssignment" id="cager.parser/ASTAssignment#ASTAssignment(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLHS" id="cager.parser/ASTAssignment#getLHS()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRHS" id="cager.parser/ASTAssignment#getRHS()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTAssignment#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTAssignment-Standard::Derive->cager.parser/ASTStatement" source="//@children.5" target="//@children.16" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="126,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,200"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.12/@sourceConnections.1 //@children.13/@sourceConnections.1 //@children.2/@sourceConnections.1 //@children.11/@sourceConnections.1 //@children.15/@sourceConnections.1 //@children.18/@sourceConnections.1" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTAssignment" source="//@children.5" target="//@children.16" targetEnd="//@children.5/@sourceConnections.1/@children.1" sourceEnd="//@children.5/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,230" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTBinOp" location="853,518" size="107,139" id="cager.parser/ASTBinOp" runTimeClassModel="op,ASTBinOp(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTBinOp(Lcager.parser.VBParser;I),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="65,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="op" id="cager.parser/ASTBinOp#op"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,72">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTBinOp" id="cager.parser/ASTBinOp#ASTBinOp(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTBinOp" id="cager.parser/ASTBinOp#ASTBinOp(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTBinOp#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="cager.parser/ASTBinOp#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTBinOp-Standard::Derive->cager.parser/SimpleNode" source="//@children.6" target="//@children.17" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="14,235"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTBinOp" source="//@children.6" target="//@children.19/@sourceConnections.1" targetEnd="//@children.6/@sourceConnections.1/@children.1" sourceEnd="//@children.6/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="53,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTCompilationUnit" location="1210,488" size="170,103" id="cager.parser/ASTCompilationUnit" runTimeClassModel="ASTCompilationUnit(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTCompilationUnit(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="122,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCompilationUnit" location="-12,58" id="cager.parser/ASTCompilationUnit#ASTCompilationUnit(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCompilationUnit" id="cager.parser/ASTCompilationUnit#ASTCompilationUnit(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTCompilationUnit#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTCompilationUnit-Standard::Derive->cager.parser/SimpleNode" source="//@children.7" target="//@children.17" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="121,235"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTCompilationUnit" source="//@children.7" target="//@children.19/@sourceConnections.1" targetEnd="//@children.7/@sourceConnections.1/@children.1" sourceEnd="//@children.7/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTEventDeclaration" location="1933,479" size="176,103" id="cager.parser/ASTEventDeclaration" runTimeClassModel="ASTEventDeclaration(Lcager.parser.VBParser;I),ASTEventDeclaration(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="131,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTEventDeclaration" id="cager.parser/ASTEventDeclaration#ASTEventDeclaration(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTEventDeclaration" id="cager.parser/ASTEventDeclaration#ASTEventDeclaration(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTEventDeclaration#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTEventDeclaration-Standard::Derive->cager.parser/SimpleNode" source="//@children.8" target="//@children.17" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,12" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,150"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="cager.parser/SimpleNode&lt;-cager.parser/ASTEventDeclaration" source="//@children.8" target="//@children.19/@sourceConnections.1" targetEnd="//@children.8/@sourceConnections.1/@children.1" sourceEnd="//@children.8/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-746,1"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTDoCondition" location="1564,479" size="155,121" id="cager.parser/ASTDoCondition" runTimeClassModel="ASTDoCondition(Lcager.parser.VBParser;I),ASTDoCondition(I),conditionWhile,jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="conditionWhile" id="cager.parser/ASTDoCondition#conditionWhile"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDoCondition" id="cager.parser/ASTDoCondition#ASTDoCondition(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDoCondition" id="cager.parser/ASTDoCondition#ASTDoCondition(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTDoCondition#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTDoCondition-Standard::Derive->cager.parser/SimpleNode" source="//@children.9" target="//@children.17" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="1,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,175"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTDoCondition" source="//@children.9" target="//@children.19/@sourceConnections.1" targetEnd="//@children.9/@sourceConnections.1/@children.1" sourceEnd="//@children.9/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="77,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTCaseExpr" location="1057,604" size="128,103" id="cager.parser/ASTCaseExpr" runTimeClassModel="ASTCaseExpr(I),ASTCaseExpr(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCaseExpr" id="cager.parser/ASTCaseExpr#ASTCaseExpr(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCaseExpr" id="cager.parser/ASTCaseExpr#ASTCaseExpr(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTCaseExpr#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTCaseExpr-Standard::Derive->cager.parser/SimpleNode" source="//@children.10" target="//@children.17" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,235"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTCaseExpr" source="//@children.10" target="//@children.19/@sourceConnections.1" targetEnd="//@children.10/@sourceConnections.1/@children.1" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTDeclaration" location="985,1072" size="141,103" id="cager.parser/ASTDeclaration" runTimeClassModel="ASTDeclaration(I),ASTDeclaration(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDeclaration" id="cager.parser/ASTDeclaration#ASTDeclaration(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDeclaration" id="cager.parser/ASTDeclaration#ASTDeclaration(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTDeclaration#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTDeclaration-Standard::Derive->cager.parser/ASTStatement" source="//@children.11" target="//@children.16" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,219"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTDeclaration" source="//@children.11" target="//@children.5/@sourceConnections.1" targetEnd="//@children.11/@sourceConnections.1/@children.1" sourceEnd="//@children.11/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTCallStatement" location="397,1072" size="158,103" id="cager.parser/ASTCallStatement" runTimeClassModel="ASTCallStatement(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTCallStatement(Lcager.parser.VBParser;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCallStatement" id="cager.parser/ASTCallStatement#ASTCallStatement(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCallStatement" id="cager.parser/ASTCallStatement#ASTCallStatement(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTCallStatement#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTCallStatement-Standard::Derive->cager.parser/ASTStatement" source="//@children.12" target="//@children.16" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="13,231"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTCallStatement" source="//@children.12" target="//@children.5/@sourceConnections.1" targetEnd="//@children.12/@sourceConnections.1/@children.1" sourceEnd="//@children.12/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTCaseStatement" location="585,1110" size="164,103" id="cager.parser/ASTCaseStatement" runTimeClassModel="jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTCaseStatement(I),ASTCaseStatement(Lcager.parser.VBParser;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCaseStatement" id="cager.parser/ASTCaseStatement#ASTCaseStatement(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTCaseStatement" id="cager.parser/ASTCaseStatement#ASTCaseStatement(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTCaseStatement#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTCaseStatement-Standard::Derive->cager.parser/ASTStatement" source="//@children.13" target="//@children.16" targetEnd="//@children.13/@sourceConnections.0/@children.2" label="//@children.13/@sourceConnections.0/@children.0" sourceEnd="//@children.13/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="113,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="50,231"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTCaseStatement" source="//@children.13" target="//@children.5/@sourceConnections.1" targetEnd="//@children.13/@sourceConnections.1/@children.1" sourceEnd="//@children.13/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="82,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTEnumDeclaration" location="1742,503" size="177,103" id="cager.parser/ASTEnumDeclaration" runTimeClassModel="ASTEnumDeclaration(Lcager.parser.VBParser;I),ASTEnumDeclaration(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTEnumDeclaration" id="cager.parser/ASTEnumDeclaration#ASTEnumDeclaration(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTEnumDeclaration" id="cager.parser/ASTEnumDeclaration#ASTEnumDeclaration(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTEnumDeclaration#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTEnumDeclaration-Standard::Derive->cager.parser/SimpleNode" source="//@children.14" target="//@children.17" targetEnd="//@children.14/@sourceConnections.0/@children.2" label="//@children.14/@sourceConnections.0/@children.0" sourceEnd="//@children.14/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="3,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="147,161"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTEnumDeclaration" source="//@children.14" target="//@children.19/@sourceConnections.1" targetEnd="//@children.14/@sourceConnections.1/@children.1" sourceEnd="//@children.14/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTDoWhileStatement" location="1156,1072" size="187,103" id="cager.parser/ASTDoWhileStatement" runTimeClassModel="ASTDoWhileStatement(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTDoWhileStatement(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDoWhileStatement" id="cager.parser/ASTDoWhileStatement#ASTDoWhileStatement(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTDoWhileStatement" id="cager.parser/ASTDoWhileStatement#ASTDoWhileStatement(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTDoWhileStatement#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTDoWhileStatement-Standard::Derive->cager.parser/ASTStatement" source="//@children.15" target="//@children.16" targetEnd="//@children.15/@sourceConnections.0/@children.2" label="//@children.15/@sourceConnections.0/@children.0" sourceEnd="//@children.15/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="39,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,181"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/ASTStatement&lt;-cager.parser/ASTDoWhileStatement" source="//@children.15" target="//@children.5/@sourceConnections.1" targetEnd="//@children.15/@sourceConnections.1/@children.1" sourceEnd="//@children.15/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="93,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0 //@children.5/@sourceConnections.1 //@children.12/@sourceConnections.0 //@children.13/@sourceConnections.0 //@children.2/@sourceConnections.0 //@children.11/@sourceConnections.0 //@children.15/@sourceConnections.0 //@children.18/@sourceConnections.0" name="ASTStatement" location="648,508" size="139,231" id="cager.parser/ASTStatement" runTimeClassModel="setLineNumber(Ljava.lang.String;),firstOnLine,lineNumber,jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),ASTStatement(I),ASTStatement(Lcager.parser.VBParser;I),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="firstOnLine" id="cager.parser/ASTStatement#firstOnLine"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lineNumber" id="cager.parser/ASTStatement#lineNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="102,90">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTStatement" id="cager.parser/ASTStatement#ASTStatement(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTStatement" id="cager.parser/ASTStatement#ASTStatement(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTStatement#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLineNumber" id="cager.parser/ASTStatement#setLineNumber(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="cager.parser/ASTStatement#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTStatement-Standard::Derive->cager.parser/SimpleNode*cager.parser/ASTStatement-Standard::Instantiate->cager.parser/SimpleNode" source="//@children.16" target="//@children.17" targetEnd="//@children.16/@sourceConnections.0/@children.2" label="//@children.16/@sourceConnections.0/@children.0" sourceEnd="//@children.16/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Derive»" size="98,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,33" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,203"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="cager.parser/SimpleNode&lt;-cager.parser/ASTStatement" source="//@children.16" target="//@children.19/@sourceConnections.1" targetEnd="//@children.16/@sourceConnections.1/@children.1" sourceEnd="//@children.16/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.19/@sourceConnections.0 //@children.19/@sourceConnections.1 //@children.3/@sourceConnections.0 //@children.1/@sourceConnections.0 //@children.16/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.14/@sourceConnections.0 //@children.8/@sourceConnections.0" name="SimpleNode" location="1058,20" size="147,235" id="cager.parser/SimpleNode" runTimeClassModel="SimpleNode(Lcager.parser.VBParser;I),SimpleNode(I),jjtOpen(),jjtGetNumChildren(),getFirstToken(),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),findRoot(),insertChild(Lcager.parser.SimpleNode;I),toString(),setFirstToken(Lcager.parser.Token;),renumberTokens(),insertChild(Lcager.parser.SimpleNode;ILjava.lang.String;),findNodes(ILjava.lang.String;Ljava.util.Vector;),jjtGetChild(I),dump(Ljava.lang.String;),name,allText(Z),getTokenText(Lcager.parser.Token;),process(Ljava.io.PrintWriter;),insertChild([Lcager.parser.SimpleNode;I),getLastToken(),findNodes(I),jjtGetParent(),childrenAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;),getTokenRange(),jjtSetParent(Lcager.parser.Node;),toString(Ljava.lang.String;),getTokenText(Lcager.parser.Token;Z),jjtAddChild(Lcager.parser.Node;I),jjtClose(),dump(Ljava.io.PrintWriter;Ljava.lang.String;),findNode(ILjava.lang.String;),allText(),insertTokensBefore(Lcager.parser.Token;Lcager.parser.Token;),findNodes(ILjava.lang.String;),setLastToken(Lcager.parser.Token;),replaceChild(Lcager.parser.SimpleNode;Lcager.parser.SimpleNode;),dump(Ljava.io.PrintStream;Ljava.lang.String;),findNode(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="cager.parser/SimpleNode#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,684">
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleNode" location="-28,225" id="cager.parser/SimpleNode#SimpleNode(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SimpleNode" id="cager.parser/SimpleNode#SimpleNode(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="allText" id="cager.parser/SimpleNode#allText(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="allText" id="cager.parser/SimpleNode#allText()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="childrenAccept" id="cager.parser/SimpleNode#childrenAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dump" id="cager.parser/SimpleNode#dump(Ljava.io.PrintStream;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dump" id="cager.parser/SimpleNode#dump(Ljava.io.PrintWriter;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dump" id="cager.parser/SimpleNode#dump(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findNode" id="cager.parser/SimpleNode#findNode(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findNode" id="cager.parser/SimpleNode#findNode(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findNodes" id="cager.parser/SimpleNode#findNodes(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findNodes" id="cager.parser/SimpleNode#findNodes(ILjava.lang.String;Ljava.util.Vector;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findNodes" id="cager.parser/SimpleNode#findNodes(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="findRoot" id="cager.parser/SimpleNode#findRoot()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFirstToken" id="cager.parser/SimpleNode#getFirstToken()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastToken" id="cager.parser/SimpleNode#getLastToken()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTokenRange" id="cager.parser/SimpleNode#getTokenRange()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTokenText" id="cager.parser/SimpleNode#getTokenText(Lcager.parser.Token;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getTokenText" id="cager.parser/SimpleNode#getTokenText(Lcager.parser.Token;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertChild" id="cager.parser/SimpleNode#insertChild(Lcager.parser.SimpleNode;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertChild" id="cager.parser/SimpleNode#insertChild(Lcager.parser.SimpleNode;ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertChild" id="cager.parser/SimpleNode#insertChild([Lcager.parser.SimpleNode;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="insertTokensBefore" id="cager.parser/SimpleNode#insertTokensBefore(Lcager.parser.Token;Lcager.parser.Token;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/SimpleNode#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAddChild" id="cager.parser/SimpleNode#jjtAddChild(Lcager.parser.Node;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtClose" id="cager.parser/SimpleNode#jjtClose()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtGetChild" id="cager.parser/SimpleNode#jjtGetChild(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtGetNumChildren" id="cager.parser/SimpleNode#jjtGetNumChildren()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtGetParent" id="cager.parser/SimpleNode#jjtGetParent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtOpen" id="cager.parser/SimpleNode#jjtOpen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtSetParent" id="cager.parser/SimpleNode#jjtSetParent(Lcager.parser.Node;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="process" id="cager.parser/SimpleNode#process(Ljava.io.PrintWriter;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="renumberTokens" id="cager.parser/SimpleNode#renumberTokens()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replaceChild" id="cager.parser/SimpleNode#replaceChild(Lcager.parser.SimpleNode;Lcager.parser.SimpleNode;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFirstToken" id="cager.parser/SimpleNode#setFirstToken(Lcager.parser.Token;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLastToken" id="cager.parser/SimpleNode#setLastToken(Lcager.parser.Token;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="cager.parser/SimpleNode#toString(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="cager.parser/SimpleNode#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTExitStatement" location="1368,1072" size="157,103" id="cager.parser/ASTExitStatement" runTimeClassModel="ASTExitStatement(I),ASTExitStatement(Lcager.parser.VBParser;I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="115,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTExitStatement" id="cager.parser/ASTExitStatement#ASTExitStatement(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTExitStatement" id="cager.parser/ASTExitStatement#ASTExitStatement(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTExitStatement#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTExitStatement-Standard::Derive->cager.parser/ASTStatement" source="//@children.18" target="//@children.16" targetEnd="//@children.18/@sourceConnections.0/@children.2" label="//@children.18/@sourceConnections.0/@children.0" sourceEnd="//@children.18/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="4,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="139,163"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="cager.parser/ASTStatement&lt;-cager.parser/ASTExitStatement" source="//@children.18" target="//@children.5/@sourceConnections.1" targetEnd="//@children.18/@sourceConnections.1/@children.1" sourceEnd="//@children.18/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="78,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="-203,-981"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ASTArgList" location="238,458" size="111,103" id="cager.parser/ASTArgList" runTimeClassModel="ASTArgList(Lcager.parser.VBParser;I),ASTArgList(I),jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="84,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArgList" id="cager.parser/ASTArgList#ASTArgList(Lcager.parser.VBParser;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ASTArgList" id="cager.parser/ASTArgList#ASTArgList(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="jjtAccept" id="cager.parser/ASTArgList#jjtAccept(Lcager.parser.VBParserVisitor;Ljava.lang.Object;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="cager.parser/ASTArgList-Standard::Derive->cager.parser/SimpleNode" source="//@children.19" target="//@children.17" targetEnd="//@children.19/@sourceConnections.0/@children.2" label="//@children.19/@sourceConnections.0/@children.0" sourceEnd="//@children.19/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Derive»" size="43,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,26" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,149"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.3/@sourceConnections.1 //@children.1/@sourceConnections.1 //@children.16/@sourceConnections.1 //@children.6/@sourceConnections.1 //@children.10/@sourceConnections.1 //@children.7/@sourceConnections.1 //@children.4/@sourceConnections.1 //@children.9/@sourceConnections.1 //@children.14/@sourceConnections.1 //@children.8/@sourceConnections.1" id="cager.parser/SimpleNode&lt;-cager.parser/ASTArgList" source="//@children.19" target="//@children.17" targetEnd="//@children.19/@sourceConnections.1/@children.1" sourceEnd="//@children.19/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="73,234" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

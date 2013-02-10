@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kdm:Segment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:code="http://kdm.omg.org/code" xmlns:kdm="http://kdm.omg.org/kdm" name="testvb">
+  <segment name="testvb">
+    <model xsi:type="code:CodeModel" name="testvb"/>
+  </segment>
+  <model xsi:type="code:CodeModel" xmi:id="id.0" name="testvb"/>
+</kdm:Segment>

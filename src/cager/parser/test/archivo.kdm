@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kdm:Segment xmlns:kdm="http://kdm.omg.org/kdm" xmlns:action="http://kdm.omg.org/action" xmlns:code="http://kdm.omg.org/code" xmlns:source="http://kdm.omg.org/source" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="testvb">
+  <model xmi:id="id.0" name="testvb" xmi:type="code:CodeModel">
+    <codeElement xmi:id="id.1" name="testvb.cls" xmi:type="code:CompilationUnit">
+      <codeElement xmi:id="id.15" name="OpenProcess" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.16" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.17" name="dwAccess" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.18" name="fInherit" type="id.10" pos="1" />
+          <parameterUnit xmi:id="id.19" name="hObject" type="id.11" pos="2" />
+          <parameterUnit xmi:id="id.20" type="id.11" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.21" name="WaitForSingleObject" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.22" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.23" name="hHandle" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.24" name="lngMilliseconds" type="id.11" pos="1" />
+          <parameterUnit xmi:id="id.25" type="id.11" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.26" name="CloseHandle" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.27" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.28" name="hObject" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.29" type="id.11" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.30" name="Sleep" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.31" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.32" name="dwMilliseconds" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.33" type="id.14" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.34" name="GetExitCodeProcess" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.35" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.36" name="hProcess" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.37" name="lpExitCode" type="id.11" pos="1" />
+          <parameterUnit xmi:id="id.38" type="id.11" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.39" name="m_WaitForm" xmi:type="code:StorableUnit" type="id.13" kind="global" />
+      <codeElement xmi:id="id.40" name="m_ExitCode" xmi:type="code:StorableUnit" type="id.11" kind="global" />
+      <codeElement xmi:id="id.41" name="m_ProgHandle" xmi:type="code:StorableUnit" type="id.11" kind="global" />
+      <codeElement xmi:id="id.42" name="Run" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.43" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.44" name="cmd" type="id.13" pos="0" />
+          <parameterUnit xmi:id="id.47" name="WindowStyle" type="id.45" pos="1" />
+          <parameterUnit xmi:id="id.48" name="Wait" type="id.4" pos="2" />
+          <parameterUnit xmi:id="id.49" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.58" xmi:type="action:ActionElement" name="a0" kind="local">
+          <actionRelation xmi:id="id.59" xmi:type="action:Writes" to="id.41" from="id.58" />
+          <actionRelation xmi:id="id.61" xmi:type="action:Calls" to="id.60" from="id.58" />
+        </codeElement>
+        <codeElement xmi:id="id.62" xmi:type="action:ActionElement" name="a1" kind="local">
+          <actionRelation xmi:id="id.64" xmi:type="action:Writes" to="id.63" from="id.62" />
+        </codeElement>
+        <codeElement xmi:id="id.65" xmi:type="action:ActionElement" name="a2" kind="local">
+          <actionRelation xmi:id="id.66" xmi:type="action:Writes" to="id.63" from="id.65" />
+          <actionRelation xmi:id="id.67" xmi:type="action:Calls" to="id.50" from="id.65" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.50" name="WaitOnProgram" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.51" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.52" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.68" xmi:type="action:ActionElement" name="a3" kind="local">
+          <actionRelation xmi:id="id.70" xmi:type="action:Writes" to="id.69" from="id.68" />
+          <actionRelation xmi:id="id.71" xmi:type="action:Reads" to="id.40" from="id.68" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.53" name="m_WaitForm_Timer" xmi:type="code:CallableUnit" kind="regular">
+        <codeElement xmi:id="id.54" xmi:type="code:Signature">
+          <parameterUnit xmi:id="id.55" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.56" name="iExit" xmi:type="code:StorableUnit" type="id.11" kind="local" />
+        <codeElement xmi:id="id.57" name="hProg" xmi:type="code:StorableUnit" type="id.11" kind="local" />
+        <codeElement xmi:id="id.72" xmi:type="action:ActionElement" name="a4" kind="local">
+          <actionRelation xmi:id="id.73" xmi:type="action:Writes" to="id.57" from="id.72" />
+          <actionRelation xmi:id="id.74" xmi:type="action:Calls" to="id.15" from="id.72" />
+        </codeElement>
+        <codeElement xmi:id="id.75" xmi:type="action:ActionElement" name="a5" kind="local">
+          <actionRelation xmi:id="id.76" xmi:type="action:Writes" to="id.40" from="id.75" />
+          <actionRelation xmi:id="id.77" xmi:type="action:Reads" to="id.56" from="id.75" />
+        </codeElement>
+        <codeElement xmi:id="id.78" xmi:type="action:ActionElement" name="a6" kind="local">
+          <actionRelation xmi:id="id.80" xmi:type="action:Writes" to="id.79" from="id.78" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.60" name="Shell" xmi:type="code:CallableUnit" kind="external" />
+      <codeElement xmi:id="id.63" name="Run" xmi:type="code:StorableUnit" type="" kind="external" />
+      <codeElement xmi:id="id.69" name="WaitOnProgram" xmi:type="code:StorableUnit" type="" kind="external" />
+      <codeElement xmi:id="id.79" name="m_WaitForm.Visible" xmi:type="code:StorableUnit" type="" kind="external" />
+    </codeElement>
+    <codeElement xmi:id="id.3" xmi:type="code:LanguageUnit">
+      <codeElement xmi:id="id.4" xmi:type="code:BooleanType" name="Boolean" />
+      <codeElement xmi:id="id.5" xmi:type="code:OctetType" name="Byte" />
+      <codeElement xmi:id="id.6" xmi:type="code:CharType" name="Char" />
+      <codeElement xmi:id="id.7" xmi:type="code:DateType" name="Date" />
+      <codeElement xmi:id="id.8" xmi:type="code:DecimalType" name="Decimal" />
+      <codeElement xmi:id="id.9" xmi:type="code:DecimalType" name="Double" />
+      <codeElement xmi:id="id.10" xmi:type="code:IntegerType" name="Integer" />
+      <codeElement xmi:id="id.11" xmi:type="code:DecimalType" name="Long" />
+      <codeElement xmi:id="id.12" xmi:type="code:DecimalType" name="Short" />
+      <codeElement xmi:id="id.13" xmi:type="code:StringType" name="String" />
+      <codeElement xmi:id="id.14" xmi:type="code:VoidType" name="Void" />
+      <codeElement xmi:id="id.45" xmi:type="code:EnumeratedType" name="VBA.VbAppWinStyle">
+        <value xmi:id="id.46" name="vbNormalFocus" type="id.45" />
+      </codeElement>
+    </codeElement>
+  </model>
+</kdm:Segment>

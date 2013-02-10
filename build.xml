@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="jar" name="cager.parser">
+    <target name="init">
+    	<mkdir dir="./classes"/>
+    </target>
+    
+    <target name="clean"/>
+	
+	<target name="jjtreeCheck" depends="init">
+		<uptodate property="jjtree.notRequired" targetfile="src/cager/parser/VBParser.jj" srcfile="src/cager/parser/VBParser.jjt" />
+	</target>
+	
+	<target name="jjtree" depends="jjtreeCheck" unless="jjtree.notRequired">
+		<java classname="jjtree" classpath="lib/javacc-3.2.jar" fork="true">
+			<arg value="-OUTPUT_DIRECTORY=src/cager/parser" />
+			<arg value="src/cager/parser/VBParser.jjt" />
+		</java>
+	</target>
+
+	<target name="javaccCheck" depends="jjtree">
+		<uptodate property="javacc.notRequired" targetfile="src/cager/parser/VBParser.java" srcfile="src/cager/parser/VBParser.jj" />
+	</target>
+	
+	<target name="javacc" depends="javaccCheck" unless="javacc.notRequired">
+		<java classname="javacc" classpath="lib/javacc-3.2.jar" fork="true">
+			<arg value="-OUTPUT_DIRECTORY=src/cager/parser" />
+			<arg value="src/cager/parser/VBParser.jj" />
+		</java>
+	</target>
+
+	<target depends="javacc" name="build">
+        <javac destdir="./classes" source="1.4">
+        	<classpath>
+        		<pathelement location="./classes"/>
+        		<pathelement location="lib/servlet.jar"/>
+        	</classpath>
+            <src path="src"/>
+        </javac>
+    </target>
+	
+    <target depends="build" name="test">
+        <copy file="src/cager/parser/test/testvb.cls" todir="classes/cager/parser/test" />
+    	<junit haltonfailure="yes" printsummary="withOutAndErr" showoutput="yes">
+		<classpath>
+			<pathelement location="classes"/>
+		</classpath>
+		<test name="cager.parser.test.TestParser" />
+    	</junit>
+    </target>
+
+	<target depends="test" name="jar">
+        <jar jarfile="cager.parser.jar" basedir="./classes">
+        	<include name="**/*.class" />
+        </jar>
+    </target>
+
+	<target name="javadoc">
+		<javadoc access="protected" author="true" 
+			destdir="doc" nodeprecated="false" nodeprecatedlist="false" 
+			noindex="false" nonavbar="false" notree="false" 
+			packagenames="cager.parser" 
+			source="1.4" sourcepath="src" splitindex="false" use="true" version="true">
+        	<classpath>
+        		<pathelement location="./classes"/>
+        		<pathelement location="lib/servlet.jar"/>
+        	</classpath>
+ 		</javadoc>			
+	</target>
+	
+	<target name="release" depends="jar,javadoc">
+		<zip destfile="vbparser_v7.zip">
+			<zipfileset dir="." includes="cager.parser.jar,build.xml,LICENSE" />
+			<zipfileset dir="src" prefix="src" includes="**/*" />
+			<zipfileset dir="lib" prefix="lib" includes="**/*" />
+		</zip>
+		<zip destfile="vbparser_doc_v7.zip">
+			<zipfileset dir="doc" includes="**/*" />
+		</zip>
+		<zip destfile="vbparser_VBAddIn_v7.zip">
+			<zipfileset dir="VBAddIn" prefix="src" includes="**/*" />
+		</zip>
+	</target>
+</project>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kdm:Segment xmlns:kdm="http://kdm.omg.org/kdm" xmlns:action="http://kdm.omg.org/action" xmlns:code="http://kdm.omg.org/code" xmlns:source="http://kdm.omg.org/source" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="testvbPRU">
+  <model xmi:id="id.0" name="testvbPRU" xmi:type="code:CodeModel">
+    <codeElement xmi:id="id.1" name="testvbPRU.cls" xmi:type="code:CompilationUnit">
+      <codeElement xmi:id="id.15" name="OpenProcess" export="private" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.16" language="VisualBasic" snippet="&#xD;&#xA;Private Declare Function OpenProcess Lib &quot;kernel32.dll&quot; (ByVal dwAccess As Long, ByVal fInherit As Integer, ByVal hObject As Long) As Long" />
+        <codeElement xmi:id="id.17" xmi:type="code:Signature" name="OpenProcess">
+          <parameterUnit xmi:id="id.18" name="dwAccess" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.19" name="fInherit" kind="byValue" type="id.10" pos="1" />
+          <parameterUnit xmi:id="id.20" name="hObject" kind="byValue" type="id.11" pos="2" />
+          <parameterUnit xmi:id="id.21" type="id.11" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.188" xmi:type="action:ActionElement" name="a60" kind="local" />
+        <codeElement xmi:id="id.189" xmi:type="action:ActionElement" name="a61" kind="local" />
+        <codeElement xmi:id="id.190" xmi:type="action:ActionElement" name="a62" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.22" name="WaitForSingleObject" export="private" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.23" language="VisualBasic" snippet="Private Declare Function WaitForSingleObject Lib &quot;kernel32&quot; (ByVal hHandle As Long, ByVal lngMilliseconds As Long) As Long" />
+        <codeElement xmi:id="id.24" xmi:type="code:Signature" name="WaitForSingleObject">
+          <parameterUnit xmi:id="id.25" name="hHandle" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.26" name="lngMilliseconds" kind="byValue" type="id.11" pos="1" />
+          <parameterUnit xmi:id="id.27" type="id.11" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.28" name="CloseHandle" export="private" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.29" language="VisualBasic" snippet="Private Declare Function CloseHandle Lib &quot;kernel32&quot; (ByVal hObject As Long) As Long" />
+        <codeElement xmi:id="id.30" xmi:type="code:Signature" name="CloseHandle">
+          <parameterUnit xmi:id="id.31" name="hObject" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.32" type="id.11" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.197" xmi:type="action:ActionElement" name="a67" kind="local" />
+        <codeElement xmi:id="id.199" xmi:type="action:ActionElement" name="a68" kind="Condition">
+          <actionRelation xmi:id="id.200" xmi:type="action:Reads" from="id.199" />
+          <actionRelation xmi:id="id.201" xmi:type="action:TrueFlow" from="id.199" />
+          <actionRelation xmi:id="id.202" xmi:type="action:FalseFlow" from="id.199" />
+        </codeElement>
+        <codeElement xmi:id="id.203" xmi:type="action:ActionElement" name="a69" kind="local" />
+        <codeElement xmi:id="id.204" xmi:type="action:ActionElement" name="a70" kind="local">
+          <actionRelation xmi:id="id.205" xmi:type="action:Writes" to="id.45" from="id.204" />
+          <actionRelation xmi:id="id.206" xmi:type="action:Reads" to="id.74" from="id.204" />
+        </codeElement>
+        <codeElement xmi:id="id.207" xmi:type="action:ActionElement" name="a71" kind="local" />
+        <codeElement xmi:id="id.208" xmi:type="action:ActionElement" name="a72" kind="local">
+          <actionRelation xmi:id="id.210" xmi:type="action:Writes" to="id.209" from="id.208" />
+        </codeElement>
+        <codeElement xmi:id="id.211" xmi:type="action:ActionElement" name="a73" kind="local" />
+        <codeElement xmi:id="id.214" xmi:type="action:ActionElement" name="a75" kind="local" />
+        <codeElement xmi:id="id.217" xmi:type="action:ActionElement" name="a77" kind="local" />
+        <codeElement xmi:id="id.218" xmi:type="action:ActionElement" name="a78" kind="local" />
+        <codeElement xmi:id="id.219" xmi:type="action:ActionElement" name="a79" kind="local" />
+        <codeElement xmi:id="id.220" xmi:type="action:ActionElement" name="a80" kind="local">
+          <actionRelation xmi:id="id.221" xmi:type="action:Writes" to="id.76" from="id.220" />
+        </codeElement>
+        <codeElement xmi:id="id.222" xmi:type="action:ActionElement" name="a81" kind="local" />
+        <codeElement xmi:id="id.225" xmi:type="action:ActionElement" name="a83" kind="local" />
+        <codeElement xmi:id="id.226" xmi:type="action:ActionElement" name="a84" kind="local" />
+        <codeElement xmi:id="id.227" xmi:type="action:ActionElement" name="a85" kind="local" />
+        <codeElement xmi:id="id.230" xmi:type="action:ActionElement" name="a87" kind="local" />
+        <codeElement xmi:id="id.231" xmi:type="action:ActionElement" name="a88" kind="local" />
+        <codeElement xmi:id="id.232" xmi:type="action:ActionElement" name="a89" kind="local" />
+        <codeElement xmi:id="id.233" xmi:type="action:ActionElement" name="a90" kind="local" />
+        <codeElement xmi:id="id.236" xmi:type="action:ActionElement" name="a92" kind="local" />
+        <codeElement xmi:id="id.237" xmi:type="action:ActionElement" name="a93" kind="local" />
+        <codeElement xmi:id="id.238" xmi:type="action:ActionElement" name="a94" kind="local" />
+        <codeElement xmi:id="id.241" xmi:type="action:ActionElement" name="a96" kind="local" />
+        <codeElement xmi:id="id.244" xmi:type="action:ActionElement" name="a98" kind="local" />
+        <codeElement xmi:id="id.245" xmi:type="action:ActionElement" name="a99" kind="local">
+          <actionRelation xmi:id="id.247" xmi:type="action:Writes" to="id.246" from="id.245" />
+        </codeElement>
+        <codeElement xmi:id="id.248" xmi:type="action:ActionElement" name="a100" kind="local" />
+        <codeElement xmi:id="id.249" xmi:type="action:ActionElement" name="a101" kind="local">
+          <actionRelation xmi:id="id.250" xmi:type="action:Writes" to="id.77" from="id.249" />
+        </codeElement>
+        <codeElement xmi:id="id.251" xmi:type="action:ActionElement" name="a102" kind="local" />
+        <codeElement xmi:id="id.256" xmi:type="action:ActionElement" name="a105" kind="local" />
+        <codeElement xmi:id="id.257" xmi:type="action:ActionElement" name="a106" kind="local">
+          <actionRelation xmi:id="id.258" xmi:type="action:Writes" to="id.77" from="id.257" />
+          <actionRelation xmi:id="id.260" xmi:type="action:Calls" to="id.259" from="id.257" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.33" name="Sleep" export="private" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.34" language="VisualBasic" snippet="Private Declare Sub Sleep Lib &quot;kernel32&quot; (ByVal dwMilliseconds As Long)" />
+        <codeElement xmi:id="id.35" xmi:type="code:Signature" name="Sleep">
+          <parameterUnit xmi:id="id.36" name="dwMilliseconds" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.37" type="id.14" kind="return" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.38" name="GetExitCodeProcess" export="private" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.39" language="VisualBasic" snippet="Private Declare Function GetExitCodeProcess Lib &quot;kernel32&quot; (ByVal hProcess As Long, lpExitCode As Long) As Long" />
+        <codeElement xmi:id="id.40" xmi:type="code:Signature" name="GetExitCodeProcess">
+          <parameterUnit xmi:id="id.41" name="hProcess" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.42" name="lpExitCode" type="id.11" pos="1" />
+          <parameterUnit xmi:id="id.43" type="id.11" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.88" xmi:type="action:ActionElement" name="a6" kind="local" />
+        <codeElement xmi:id="id.91" xmi:type="action:ActionElement" name="a8" kind="local" />
+        <codeElement xmi:id="id.94" xmi:type="action:ActionElement" name="a10" kind="local" />
+        <codeElement xmi:id="id.97" xmi:type="action:ActionElement" name="a12" kind="local" />
+        <codeElement xmi:id="id.193" xmi:type="action:ActionElement" name="a64" kind="local" />
+        <codeElement xmi:id="id.194" xmi:type="action:ActionElement" name="a65" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.44" name="m_WaitForm" xmi:type="code:StorableUnit" type="id.13" kind="global" />
+      <codeElement xmi:id="id.45" name="m_ExitCode" xmi:type="code:StorableUnit" type="id.11" kind="global" />
+      <codeElement xmi:id="id.46" name="m_ProgHandle" xmi:type="code:StorableUnit" type="id.11" kind="global" />
+      <codeElement xmi:id="id.47" name="Run" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.48" language="VisualBasic" snippet="&#xD;&#xA;Public Function Run(ByVal cmd As String, Optional WindowStyle As VBA.VbAppWinStyle = vbNormalFocus, Optional ByVal Wait As Boolean) As Long&#xD;&#xA;    Debug.Print &quot;RUN: &quot; &amp; cmd&#xD;&#xA;    m_ProgHandle = Shell(cmd, WindowStyle)&#xD;&#xA;    &#xD;&#xA;    If m_ProgHandle = 0 Then&#xD;&#xA;        ' Failed&#xD;&#xA;        Run = -1&#xD;&#xA;    Else&#xD;&#xA;        Run = WaitOnProgram()&#xD;&#xA;        Debug.Print &quot;EXIT &quot; &amp; Run&#xD;&#xA;    End If&#xD;&#xA;    &#xD;&#xA;    If suma (3,4) = 7 Then&#xD;&#xA;    &#x9;Run -1&#xD;&#xA;   &#x9;Else&#xD;&#xA;   &#x9;&#x9;Run = WaitOnProgram()&#xD;&#xA;        Debug.Print &quot;EXIT &quot; &amp; Run&#x9;&#xD;&#xA;   &#x9;End If&#xD;&#xA;   &#x9;&#xD;&#xA;End Function" />
+        <codeElement xmi:id="id.49" xmi:type="code:Signature" name="Run">
+          <parameterUnit xmi:id="id.50" name="cmd" kind="byValue" type="id.13" pos="0" />
+          <parameterUnit xmi:id="id.53" name="WindowStyle" type="id.51" pos="1" />
+          <parameterUnit xmi:id="id.54" name="Wait" kind="byValue" type="id.4" pos="2" />
+          <parameterUnit xmi:id="id.55" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.102" xmi:type="action:ActionElement" name="a15" kind="local" />
+        <codeElement xmi:id="id.105" xmi:type="action:ActionElement" name="a17" kind="local">
+          <actionRelation xmi:id="id.106" xmi:type="action:Writes" to="id.46" from="id.105" />
+          <actionRelation xmi:id="id.108" xmi:type="action:Calls" to="id.107" from="id.105" />
+        </codeElement>
+        <codeElement xmi:id="id.109" xmi:type="action:ActionElement" name="a18" kind="local" />
+        <codeElement xmi:id="id.121" xmi:type="action:ActionElement" name="a24" kind="local" />
+        <codeElement xmi:id="id.122" xmi:type="action:ActionElement" name="a25" kind="local">
+          <actionRelation xmi:id="id.123" xmi:type="action:Writes" to="id.119" from="id.122" />
+          <actionRelation xmi:id="id.124" xmi:type="action:Calls" to="id.66" from="id.122" />
+        </codeElement>
+        <codeElement xmi:id="id.125" xmi:type="action:ActionElement" name="a26" kind="local" />
+        <codeElement xmi:id="id.138" xmi:type="action:ActionElement" name="a33" kind="local" />
+        <codeElement xmi:id="id.139" xmi:type="action:ActionElement" name="a34" kind="local">
+          <actionRelation xmi:id="id.140" xmi:type="action:Writes" to="id.119" from="id.139" />
+          <actionRelation xmi:id="id.141" xmi:type="action:Calls" to="id.66" from="id.139" />
+        </codeElement>
+        <codeElement xmi:id="id.142" xmi:type="action:ActionElement" name="a35" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.56" name="a" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.57" language="VisualBasic" snippet="&#xD;&#xA;Public Function a () As Long&#xD;&#xA;&#xD;&#xA;   a = 3 + 5&#xD;&#xA;&#xD;&#xA;End Function" />
+        <codeElement xmi:id="id.58" xmi:type="code:Signature" name="a">
+          <parameterUnit xmi:id="id.59" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.145" xmi:type="action:ActionElement" name="a37" kind="local">
+          <actionRelation xmi:id="id.147" xmi:type="action:Writes" to="id.146" from="id.145" />
+        </codeElement>
+        <codeElement xmi:id="id.148" xmi:type="action:ActionElement" name="a38" kind="local" />
+        <codeElement xmi:id="id.149" xmi:type="action:ActionElement" name="a39" kind="local">
+          <actionRelation xmi:id="id.151" xmi:type="action:Writes" to="id.150" from="id.149" />
+          <actionRelation xmi:id="id.152" xmi:type="action:Calls" to="id.56" from="id.149" />
+        </codeElement>
+        <codeElement xmi:id="id.154" xmi:type="action:ActionElement" name="a41" kind="local">
+          <actionRelation xmi:id="id.155" xmi:type="action:Writes" to="id.150" from="id.154" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.60" name="Suma" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.61" language="VisualBasic" snippet="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Public Function Suma ( ByVal a As Long, ByVal b As Long ) As Long&#xD;&#xA;&#xD;&#xA;&#x9;Suma = a + b &#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Suma = b + a + Suma (3,4)&#xD;&#xA;&#xD;&#xA;End Function" />
+        <codeElement xmi:id="id.62" xmi:type="code:Signature" name="Suma">
+          <parameterUnit xmi:id="id.63" name="a" kind="byValue" type="id.11" pos="0" />
+          <parameterUnit xmi:id="id.64" name="b" kind="byValue" type="id.11" pos="1" />
+          <parameterUnit xmi:id="id.65" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.153" xmi:type="action:ActionElement" name="a40" kind="local" />
+        <codeElement xmi:id="id.156" xmi:type="action:ActionElement" name="a42" kind="local" />
+        <codeElement xmi:id="id.157" xmi:type="action:ActionElement" name="a43" kind="local" />
+        <codeElement xmi:id="id.158" xmi:type="action:ActionElement" name="a44" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.66" name="WaitOnProgram" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.67" language="VisualBasic" snippet="&#xD;&#xA;Private Function WaitOnProgram() As Long&#xD;&#xA;    Set m_WaitForm = New frmWait&#xD;&#xA;    m_WaitForm.ShowWait 500&#xD;&#xA;    &#xD;&#xA;    WaitOnProgram = m_ExitCode&#xD;&#xA;End Function" />
+        <codeElement xmi:id="id.68" xmi:type="code:Signature" name="WaitOnProgram">
+          <parameterUnit xmi:id="id.69" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.129" xmi:type="action:ActionElement" name="a28" kind="Condition">
+          <actionRelation xmi:id="id.130" xmi:type="action:Reads" from="id.129" />
+          <actionRelation xmi:id="id.131" xmi:type="action:TrueFlow" from="id.129" />
+          <actionRelation xmi:id="id.132" xmi:type="action:FalseFlow" from="id.129" />
+        </codeElement>
+        <codeElement xmi:id="id.133" xmi:type="action:ActionElement" name="a29" kind="local" />
+        <codeElement xmi:id="id.134" xmi:type="action:ActionElement" name="a30" kind="local" />
+        <codeElement xmi:id="id.135" xmi:type="action:ActionElement" name="a31" kind="local" />
+        <codeElement xmi:id="id.161" xmi:type="action:ActionElement" name="a46" kind="local" />
+        <codeElement xmi:id="id.164" xmi:type="action:ActionElement" name="a48" kind="local" />
+        <codeElement xmi:id="id.165" xmi:type="action:ActionElement" name="a49" kind="local">
+          <actionRelation xmi:id="id.167" xmi:type="action:Writes" to="id.166" from="id.165" />
+          <actionRelation xmi:id="id.168" xmi:type="action:Reads" to="id.45" from="id.165" />
+        </codeElement>
+        <codeElement xmi:id="id.169" xmi:type="action:ActionElement" name="a50" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.70" name="m_WaitForm_Timer" xmi:type="code:MethodUnit" kind="method">
+        <source xmi:id="id.71" language="VisualBasic" snippet="&#xD;&#xA;Private Sub m_WaitForm_Timer()&#xD;&#xA;    Dim iExit As Long&#xD;&#xA;    Dim hProg As Long&#xD;&#xA;    &#xD;&#xA;        &#xD;&#xA;    Dim aux As Long&#xD;&#xA;    'Dim number As Integer = 8&#xD;&#xA;    'Dim index As Integer = 0&#xD;&#xA;    Dim Counts As Integer&#xD;&#xA;    Dim found As Boolean &#xD;&#xA;&#x9;Dim thisCollection As New Collection&#xD;&#xA;    Dim counter As Integer&#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    hProg = OpenProcess(PROCESS_ALL_ACCESS, False, m_ProgHandle)&#xD;&#xA;    &#xD;&#xA;    GetExitCodeProcess hProg, iExit&#xD;&#xA;    &#xD;&#xA;    CloseHandle hProg&#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    'Sentencia IF&#xD;&#xA;    If iExit &lt;&gt; STILL_ACTIVE Then&#xD;&#xA;        m_ExitCode = iExit&#xD;&#xA;        m_WaitForm.Visible = False&#xD;&#xA;        Set m_WaitForm = Nothing&#xD;&#xA;    End If&#xD;&#xA;    &#xD;&#xA;    &#xD;&#xA;    'Bucle FOR&#xD;&#xA;&#x9;FOR i=0 TO 6 STEP 2&#xD;&#xA;&#x9;&#x9;aux = i&#xD;&#xA;&#x9;NEXT &#xD;&#xA;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'Sentencia CASE&#xD;&#xA;&#x9;Select Case number&#xD;&#xA;&#x9;Case 1 To 5&#xD;&#xA;&#x9;    Debug.WriteLine(&quot;Between 1 and 5, inclusive&quot;)&#xD;&#xA;&#x9;    ' The following is the only Case clause that evaluates to True.&#xD;&#xA;&#x9;Case 6, 7, 8&#xD;&#xA;&#x9;    Debug.WriteLine(&quot;Between 6 and 8, inclusive&quot;)&#xD;&#xA;&#x9;Case IS = 9, IS = 10&#xD;&#xA;&#x9;    Debug.WriteLine(&quot;Equal to 9 or 10&quot;)&#xD;&#xA;&#x9;Case Else&#xD;&#xA;&#x9;    Debug.WriteLine(&quot;Not between 1 and 10, inclusive&quot;)&#xD;&#xA;&#x9;End Select&#xD;&#xA;&#xD;&#xA;&#x9;'Sentencias DO LOOP UNTIL y DO WHILE LOOP&#xD;&#xA;&#x9;Check = True ' Se inicializan las variables.&#xD;&#xA;&#x9;Counts = 0&#xD;&#xA;&#x9;Do ' Empieza sin comprobar ninguna condición.&#xD;&#xA;&#x9;&#x9;Do While Counts &lt; 20 ' Bucle que acaba si Counts&gt;=20 o con Exit Do.&#xD;&#xA;&#x9;&#x9;&#x9;Counts = Counts + 1 ' Se incrementa Counts.&#xD;&#xA;&#x9;&#x9;&#x9;If Counts = 10 Then ' Si Counts es 10.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Check = False ' Se asigna a Check el valor False.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;Exit Do ' Se acaba el segundo Do.&#xD;&#xA;&#x9;&#x9;&#x9;End If&#xD;&#xA;&#x9;&#x9;Loop&#xD;&#xA;&#x9;Loop Until Check = False ' Salir del &quot;loop&quot; si Check es False.&#xD;&#xA;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'Bucle WHILEWEND&#x9;&#xD;&#xA;&#x9;Counts = 0&#xD;&#xA;&#x9;While Counts &lt; 20 &#xD;&#xA;&#x9;&#x9;Counts = Counts + 1 &#xD;&#xA;&#x9;Wend&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'Bucle FOR EACH&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'found = false&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'For Each thisObject As String In thisCollection&#xD;&#xA;&#x9; '   If thisObject = &quot;Hello&quot; Then&#xD;&#xA;&#x9;  '      found = True&#xD;&#xA;&#x9;   '     Exit For&#xD;&#xA;&#x9;   ' End If&#xD;&#xA;&#x9;'Next thisObject&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'counter = 0&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'While counter &lt; 20&#xD;&#xA;    '&#x9;counter = counter + 1&#xD;&#xA;    &#x9;' Insert code to use current value of counter.&#xD;&#xA;&#x9;'End While&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'While counter &lt;= 10&#xD;&#xA;&#x9;'&#x9;Debug.Write(counter.ToString &amp; &quot; &quot;)&#xD;&#xA;&#x9;'&#x9;counter = counter + 1&#xD;&#xA;&#x9;'End While&#xD;&#xA;&#x9;&#xD;&#xA;End Sub" />
+        <codeElement xmi:id="id.72" xmi:type="code:Signature" name="m_WaitForm_Timer">
+          <parameterUnit xmi:id="id.73" type="id.14" kind="return" />
+        </codeElement>
+        <codeElement xmi:id="id.74" name="iExit" xmi:type="code:StorableUnit" type="id.11" kind="local" />
+        <codeElement xmi:id="id.75" name="hProg" xmi:type="code:StorableUnit" type="id.11" kind="local" />
+        <codeElement xmi:id="id.76" name="aux" xmi:type="code:StorableUnit" type="id.11" kind="local" />
+        <codeElement xmi:id="id.77" name="Counts" xmi:type="code:StorableUnit" type="id.10" kind="local" />
+        <codeElement xmi:id="id.78" name="found" xmi:type="code:StorableUnit" type="id.4" kind="local" />
+        <codeElement xmi:id="id.79" name="thisCollection" xmi:type="code:StorableUnit" type="id.13" kind="local" />
+        <codeElement xmi:id="id.80" name="counter" xmi:type="code:StorableUnit" type="id.10" kind="local" />
+        <codeElement xmi:id="id.184" xmi:type="action:ActionElement" name="a58" kind="local">
+          <actionRelation xmi:id="id.185" xmi:type="action:Writes" to="id.75" from="id.184" />
+          <actionRelation xmi:id="id.186" xmi:type="action:Calls" to="id.15" from="id.184" />
+        </codeElement>
+        <codeElement xmi:id="id.187" xmi:type="action:ActionElement" name="a59" kind="local" />
+      </codeElement>
+      <codeElement xmi:id="id.81" xmi:type="action:ActionElement" name="a0" kind="global" />
+      <codeElement xmi:id="id.82" xmi:type="action:ActionElement" name="a1" kind="global" />
+      <codeElement xmi:id="id.83" xmi:type="action:ActionElement" name="a2" kind="global" />
+      <codeElement xmi:id="id.84" xmi:type="action:ActionElement" name="a3" kind="global" />
+      <codeElement xmi:id="id.85" xmi:type="action:ActionElement" name="a4" kind="global" />
+      <codeElement xmi:id="id.107" name="Shell" xmi:type="code:MethodUnit" kind="unknown">
+        <codeElement xmi:id="id.110" xmi:type="action:ActionElement" name="a19" kind="local" />
+        <codeElement xmi:id="id.111" xmi:type="action:ActionElement" name="a20" kind="local" />
+        <codeElement xmi:id="id.113" xmi:type="action:ActionElement" name="a21" kind="Condition">
+          <actionRelation xmi:id="id.114" xmi:type="action:Reads" from="id.113" />
+          <actionRelation xmi:id="id.115" xmi:type="action:TrueFlow" from="id.113" />
+          <actionRelation xmi:id="id.116" xmi:type="action:FalseFlow" from="id.113" />
+        </codeElement>
+        <codeElement xmi:id="id.117" xmi:type="action:ActionElement" name="a22" kind="local" />
+        <codeElement xmi:id="id.118" xmi:type="action:ActionElement" name="a23" kind="local">
+          <actionRelation xmi:id="id.120" xmi:type="action:Writes" to="id.119" from="id.118" />
+        </codeElement>
+      </codeElement>
+      <codeElement xmi:id="id.119" name="Run" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.146" name="a" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.150" name="Suma" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.166" name="WaitOnProgram" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.209" name="m_WaitForm.Visible" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.246" name="Check" xmi:type="code:StorableUnit" type="" kind="unknown" />
+      <codeElement xmi:id="id.259" name="Counts" xmi:type="code:MethodUnit" kind="unknown">
+        <codeElement xmi:id="id.261" xmi:type="action:ActionElement" name="a107" kind="local" />
+        <codeElement xmi:id="id.263" xmi:type="action:ActionElement" name="a108" kind="Condition">
+          <actionRelation xmi:id="id.264" xmi:type="action:Reads" from="id.263" />
+          <actionRelation xmi:id="id.265" xmi:type="action:TrueFlow" from="id.263" />
+          <actionRelation xmi:id="id.266" xmi:type="action:FalseFlow" from="id.263" />
+        </codeElement>
+        <codeElement xmi:id="id.267" xmi:type="action:ActionElement" name="a109" kind="local" />
+        <codeElement xmi:id="id.268" xmi:type="action:ActionElement" name="a110" kind="local">
+          <actionRelation xmi:id="id.269" xmi:type="action:Writes" to="id.246" from="id.268" />
+        </codeElement>
+        <codeElement xmi:id="id.270" xmi:type="action:ActionElement" name="a111" kind="local" />
+        <codeElement xmi:id="id.273" xmi:type="action:ActionElement" name="a113" kind="local" />
+        <codeElement xmi:id="id.274" xmi:type="action:ActionElement" name="a114" kind="local">
+          <actionRelation xmi:id="id.275" xmi:type="action:Writes" to="id.77" from="id.274" />
+        </codeElement>
+        <codeElement xmi:id="id.276" xmi:type="action:ActionElement" name="a115" kind="local" />
+        <codeElement xmi:id="id.279" xmi:type="action:ActionElement" name="a117" kind="local" />
+        <codeElement xmi:id="id.280" xmi:type="action:ActionElement" name="a118" kind="local">
+          <actionRelation xmi:id="id.281" xmi:type="action:Writes" to="id.77" from="id.280" />
+          <actionRelation xmi:id="id.282" xmi:type="action:Calls" to="id.259" from="id.280" />
+        </codeElement>
+        <codeElement xmi:id="id.283" xmi:type="action:ActionElement" name="a119" kind="local" />
+      </codeElement>
+    </codeElement>
+    <codeElement xmi:id="id.3" xmi:type="code:LanguageUnit">
+      <codeElement xmi:id="id.4" xmi:type="code:BooleanType" name="Boolean" />
+      <codeElement xmi:id="id.5" xmi:type="code:OctetType" name="Byte" />
+      <codeElement xmi:id="id.6" xmi:type="code:CharType" name="Char" />
+      <codeElement xmi:id="id.7" xmi:type="code:DateType" name="Date" />
+      <codeElement xmi:id="id.8" xmi:type="code:DecimalType" name="Decimal" />
+      <codeElement xmi:id="id.9" xmi:type="code:DecimalType" name="Double" />
+      <codeElement xmi:id="id.10" xmi:type="code:IntegerType" name="Integer" />
+      <codeElement xmi:id="id.11" xmi:type="code:DecimalType" name="Long" />
+      <codeElement xmi:id="id.12" xmi:type="code:DecimalType" name="Short" />
+      <codeElement xmi:id="id.13" xmi:type="code:StringType" name="String" />
+      <codeElement xmi:id="id.14" xmi:type="code:VoidType" name="Void" />
+      <codeElement xmi:id="id.51" xmi:type="code:EnumeratedType" name="VBA.VbAppWinStyle">
+        <value xmi:id="id.52" name="vbNormalFocus" type="id.51" />
+      </codeElement>
+    </codeElement>
+  </model>
+</kdm:Segment>
