@@ -57,6 +57,7 @@ import cager.parser.ASTParamSpec;
 import cager.parser.ASTPrimaryExpression;
 import cager.parser.ASTProcDeclaration;
 import cager.parser.ASTStatement;
+import cager.parser.ASTStatements;
 import cager.parser.ASTTypeName;
 import cager.parser.ASTVarDecl;
 import cager.parser.SimpleNode;
@@ -69,7 +70,7 @@ import cager.parser.VBParser;
  */
 public class SimpleTest3 
 {
-	//TODO: Implementar estructura de control de índices de Identificadores.
+	//TODO: Implementar estructura de control de Ã­ndices de Identificadores.
 	private int idCount = 0;
 	private int idName = 0;
 	private int idAction = 0;
@@ -115,7 +116,7 @@ public class SimpleTest3
         InputStream is = getClass().getResourceAsStream(archivo);
 
         
-        // Genera el nodo desde el código Visual Basic
+        // Genera el nodo desde el cÃ³digo Visual Basic
         parser = new VBParser(is);
         parser.setAttemptErrorRecovery(true);
         SimpleNode node = parser.CompilationUnit(false);
@@ -203,7 +204,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
     			
 //<source xmi:id="id.41" language="Hla" snippet="Field5[1] -> Acc_Type[0]"/>
     			
-    			//Buscar Parámetros para signature
+    			//Buscar ParÃ¡metros para signature
     			
     			codeElement.addContent(TratarSignature((SimpleNode)astNode.jjtGetChild(i),strNombre));
     			
@@ -211,7 +212,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
 
     			
     			if(astNode instanceof ASTDeclare
-    					&& astNode.jjtGetChild(i).jjtGetParent().jjtGetChild(0).equals(astNode.jjtGetChild(i)) ){ //TODO: Revisar si esto es lógico.
+    					&& astNode.jjtGetChild(i).jjtGetParent().jjtGetChild(0).equals(astNode.jjtGetChild(i)) ){ //TODO: Revisar si esto es lÃ³gico.
     				
     				ASTDeclare astDeclare = (ASTDeclare) astNode;
     				Element codeElement = new Element ("codeElement");
@@ -244,7 +245,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
     				this.segmento = segmento;
     				
     			
-    				//Buscar Parámetros para signature
+    				//Buscar ParÃ¡metros para signature
     				
     				codeElement.addContent(TratarSignature(astNode,strNombre));
     				
@@ -268,7 +269,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
     					}
     				}
     				
-    				//Si no se ha encontrado comprobamos si es una declaración múltiple y buscamos el tipo
+    				//Si no se ha encontrado comprobamos si es una declaraciÃ³n mÃºltiple y buscamos el tipo
     				if(tipo==null){
     					
     					SimpleNode Padre = (SimpleNode) astNode.jjtGetParent();
@@ -308,7 +309,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
     					idCount++;
     				
     					    					
-    					//Añadimos el enumerated a la lista de tipos
+    					//AÃ±adimos el enumerated a la lista de tipos
     					elementoTipos.addContent(enumerated);
     					
     				}
@@ -420,7 +421,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
     						
     					enumerated.addContent(valor);
 
-    					//Añadimos el enumerated a la lista de tipos
+    					//AÃ±adimos el enumerated a la lista de tipos
     					elementoTipos.addContent(enumerated);
     					
     				}
@@ -437,7 +438,7 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
    				
     			}
     			
-    			//Añadimos el tipo devuelto (tipo del Return)
+    			//AÃ±adimos el tipo devuelto (tipo del Return)
     			String tipo = "Void";
     			for (int n = 1; n < astNode.jjtGetNumChildren(); n++){
     				
@@ -461,7 +462,10 @@ System.out.println("1. ->"+astNode.jjtGetChild(i).getClass().toString()+" - "+st
 	private void trataNodo2(SimpleNode astNode, Element segmento, int nivel, int nivelAcumulado, String contexto) {
 		
     	int numChildren = astNode.jjtGetNumChildren();
-    	//TODO Solucionar referencias a Namespaces 
+    	
+    	if((SimpleNode)astNode instanceof ASTStatements){
+System.out.println("***>"+nivel+" - "+numChildren+" -> "+astNode.getClass().getName()+" "+astNode.toString());      			
+    	}    	
     	
     	SimpleNode snHijo = new SimpleNode(0);
     	
@@ -487,34 +491,18 @@ System.out.println(espacios+nivel+" - "+numChildren+" -> "+astNode.getClass().ge
     		strNombre = ((SimpleNode)astNode.jjtGetChild(i)).getName();
   			
     		
-    		if ((SimpleNode)astNode.jjtGetChild(i) instanceof ASTAssignment){
+    		if ((SimpleNode)astNode.jjtGetChild(i) instanceof ASTAssignment ||
+    			(SimpleNode)astNode.jjtGetChild(i) instanceof ASTExpression	){
     			
     			ASTAssignment assigment = (ASTAssignment)astNode.jjtGetChild(i);
-    			
-    			
+    			    			
     			//Preparamos el ActionElement
     			Element actionElement = new Element ("codeElement");
                 idAction = idCount;
                 idCount++;
                 actionElement.setAttribute("id", "id."+idAction, xmi); 
-                
-                
-                trataExpressions(assigment, actionElement, nivelAcumulado);
-    		
-    		}else if((SimpleNode)astNode.jjtGetChild(i) instanceof ASTExpression){
-                
-    			ASTExpression expression = (ASTExpression)astNode.jjtGetChild(i);
-    			
-    			
-    			//Preparamos el ActionElement
-    			Element actionElement = new Element ("codeElement");
-                idAction = idCount;
-                idCount++;
-                actionElement.setAttribute("id", "id."+idAction, xmi); 
-                
-                
-                trataExpressions(expression, actionElement, nivelAcumulado);
-    			
+                                
+                trataExpressions(assigment, actionElement, nivelAcumulado, segmento);
     		
     		}else if((SimpleNode)astNode.jjtGetChild(i) instanceof ASTStatement){
     			
@@ -530,14 +518,14 @@ System.out.println(espacios+nivel+" - "+numChildren+" -> "+astNode.getClass().ge
 				//actionElement.setAttribute("name",contexto+"_"+idName);
 				idName++;
     			
-    			trataStatements(astStatement, actionElement);
+    			trataStatements(astStatement, actionElement, segmento);
     			
     		}
     		trataNodo2((SimpleNode)astNode.jjtGetChild(i),segmento,nivel+1,nivel+nivelAcumulado,contextoLocal);
      	}
 	}
     
-	private void trataExpressions (SimpleNode astAssignment, Element actionElement,int nivelAcumulado){
+	private void trataExpressions (SimpleNode astAssignment, Element actionElement,int nivelAcumulado, Element segmento){
 		
 		SimpleNode snHijo = new SimpleNode(0);
 		String strNombre = "";
@@ -548,6 +536,7 @@ System.out.println(espacios+nivel+" - "+numChildren+" -> "+astNode.getClass().ge
 		if(this.debuggMode)actionElement.setAttribute("debug",astAssignment.toString());                
 		actionElement.setAttribute("name","a"+idName);
 		idName++;
+		
 String espacios = "";
 for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 						
@@ -587,19 +576,19 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 		        						 
 		         			actionElement.addContent(actionRelation);
 		         			
-		         			//TODO: Revisar qué hacemos con las referencias a tributos de Objetos (Objeto.atributo = ...) ASTName y ASTName
+		         			//TODO: Revisar quÃ© hacemos con las referencias a tributos de Objetos (Objeto.atributo = ...) ASTName y ASTName
 		         			//salir 
-							//TODO: Tomamos solo uno de los ASTNames hasta que sepamos cómo hacer con las properties de un objeto.
+							//TODO: Tomamos solo uno de los ASTNames hasta que sepamos cÃ³mo hacer con las properties de un objeto.
 							break;     			
 						
 						}else{
 							
-	//logger.info("Detectado un StorabeUnit nuevo!!!! ¿Qué hacemos?");
-	System.out.println("Detectado un StorabeUnit nuevo!!!! ¿Que hacemos?: "+snNieto.getName());
+	//logger.info("Detectado un StorabeUnit nuevo!!!! Â¿QuÃ© hacemos?");
+	System.out.println("Detectado un StorabeUnit nuevo!!!! Â¿Que hacemos?: "+snNieto.getName());
 	
 	
-							//Optamos temporalmente por añadirlo como StorableUnit global.
-							//TODO: Revisar qué hacer en estos casos, ya que el parser no trata los "Begin"
+							//Optamos temporalmente por aÃ±adirlo como StorableUnit global.
+							//TODO: Revisar quÃ© hacer en estos casos, ya que el parser no trata los "Begin"
 	
 							//Comprobamos si a
 							Element codeElement = new Element ("codeElement");
@@ -613,17 +602,17 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 							codeElement.setAttribute("type", "code:StorableUnit", xmi);
 							codeElement.setAttribute("type","");
 								
-							//codeElement.setAttribute("kind", "external");//TODO: Ver cómo tratar éste caso, variables utilizadas no definidas.
+							//codeElement.setAttribute("kind", "external");//TODO: Ver cÃ³mo tratar Ã©ste caso, variables utilizadas no definidas.
 							//Para MethodUnit no hay external
 							codeElement.setAttribute("kind", "unknown");
 							
 							segmento.getChild("model").getChild("codeElement").addContent(codeElement);
-							this.segmento = segmento;
+//							this.segmento = segmento;
 							
 							
 							
-							//Añadimos el Action:Writes
-							//TODO: Qué hacemos con los properties de un objeto.
+							//AÃ±adimos el Action:Writes
+							//TODO: QuÃ© hacemos con los properties de un objeto.
 							Element actionRelation = new Element ("actionRelation");
 		        			actionRelation.setAttribute("id", "id."+idCount, xmi);
 		        			idCount++;
@@ -634,7 +623,7 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 		         			actionElement.addContent(actionRelation);
 							
 							//salir 
-							//TODO: Tomamos solo uno de los ASTNames hasta que sepamos cómo hacer con las properties de un objeto.
+							//TODO: Tomamos solo uno de los ASTNames hasta que sepamos cÃ³mo hacer con las properties de un objeto.
 							break;
 							//l=snHijo.jjtGetNumChildren();
 	
@@ -668,7 +657,7 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 			        						 
 			         			actionElement.addContent(actionRelation);
 			         			
-			         			//TODO: Revisar qué hacemos con las referencias atributos de Objetos (Objeto.atributo = ...) ASTName y ASTName
+			         			//TODO: Revisar quÃ© hacemos con las referencias atributos de Objetos (Objeto.atributo = ...) ASTName y ASTName
 							
 			         		//Si no es un storableUnit reconocido
 							}else{
@@ -686,7 +675,7 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 								
 								strNombre= ((SimpleNode)(snNieto).jjtGetChild(0)).getName();
 								
-								//Tratamos la llamada a método
+								//Tratamos la llamada a mÃ©todo
 								
 								//Si la MethodUnit no estaba registrada
 								if(hsmMethodUnits.get(strNombre)==null && strNombre != null){
@@ -703,14 +692,14 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 									idCount++;
 				    				nuevaFuncion.setAttribute("name", ""+strNombre);
 				    				nuevaFuncion.setAttribute("type", "code:MethodUnit", xmi);    			
-				    				//nuevaFuncion.setAttribute("kind", "system");  //TODO: Ver cómo tratar éste caso, funciones llamadas no definidas.
-				    				//nuevaFuncion.setAttribute("kind", "unknown"); //TODO: Ver cómo tratar éste caso, funciones llamadas no definidas.
-				    				//nuevaFuncion.setAttribute("kind", "external");  //Tratamos los métodos no conocidos como de tipo exteral.
+				    				//nuevaFuncion.setAttribute("kind", "system");  //TODO: Ver cÃ³mo tratar Ã©ste caso, funciones llamadas no definidas.
+				    				//nuevaFuncion.setAttribute("kind", "unknown"); //TODO: Ver cÃ³mo tratar Ã©ste caso, funciones llamadas no definidas.
+				    				//nuevaFuncion.setAttribute("kind", "external");  //Tratamos los mÃ©todos no conocidos como de tipo exteral.
 				    				//Para los MethodUnit no hay external
 				    				nuevaFuncion.setAttribute("kind", "unknown");
 				    				
 				    				segmento.getChild("model").getChild("codeElement").addContent(nuevaFuncion);
-				    				this.segmento = segmento;
+//				    				this.segmento = segmento;
 				  					
 				    				
 				  					//Se registra el actionRelation (Call)    			         			
@@ -738,7 +727,7 @@ for(int j=0;j<nivelAcumulado;j++) espacios+="    ";
 				        			idCount++;
 				        			actionElement.addContent(actionRelation);
 								
-				  				}//FIN Tratamiento la llamada a método
+				  				}//FIN Tratamiento la llamada a mÃ©todo
 							}//FIN Tratar hijo ASTName
 	//TODO Hijos que no sean ASTName (Otro ASTBinOp contatenaciones) 
 							else{
@@ -753,7 +742,7 @@ System.out.println("ESTO ES UN ASTBinOp distinto.");
 			if (contextoLocal == ""){
 				actionElement.setAttribute("kind", "global");
 				segmento.getChild("model").getChild("codeElement").addContent(actionElement);
-				this.segmento = segmento;
+//				this.segmento = segmento;
 			}else{
 				actionElement.setAttribute("kind", "local");
 				Element elementAux = hsmMethodUnitsObj.get(hsmMethodUnits.get(contextoLocal));//.getChild("codeElement");
@@ -762,7 +751,7 @@ System.out.println("ESTO ES UN ASTBinOp distinto.");
 		
 	}
 	
-	private void trataStatements(ASTStatement astStatement, Element actionElement){
+	private void trataStatements(ASTStatement astStatement, Element actionElement, Element segmento ){
 		
 		astStatement.getClass().getName();
 
@@ -808,7 +797,7 @@ System.out.println(((ASTIfStatement)astStatement).toString());
 		if (contextoLocal == ""){
 			//actionElement.setAttribute("kind", "global");
 			segmento.getChild("model").getChild("codeElement").addContent(actionElement);
-			this.segmento = segmento;
+//			this.segmento = segmento;
 		}else{
 			//actionElement.setAttribute("kind", "local");
 			Element elementAux = hsmMethodUnitsObj.get(hsmMethodUnits.get(contextoLocal));
@@ -844,7 +833,7 @@ System.out.println(((ASTIfStatement)astStatement).toString());
 		actionRelation.setAttribute("id", "id."+idCount, xmi);
 		idCount++;
 		actionRelation.setAttribute("type", "action:Reads", xmi);
-//actionRelation.setAttribute("to", "id."+(idAction+2));//TODO calcular a dónde va
+//actionRelation.setAttribute("to", "id."+(idAction+2));//TODO calcular a dÃ³nde va
 		actionRelation.setAttribute("from","id."+idAction);
 			
 		actionElement.addContent(actionRelation);
@@ -854,7 +843,7 @@ System.out.println(((ASTIfStatement)astStatement).toString());
 		actionRelation.setAttribute("id", "id."+idCount, xmi);
 		idCount++;
 		actionRelation.setAttribute("type", "action:TrueFlow", xmi);
-//actionRelation.setAttribute("to", "id."+(idAction+2));//TODO calcular a dónde va
+//actionRelation.setAttribute("to", "id."+(idAction+2));//TODO calcular a dÃ³nde va
 		actionRelation.setAttribute("from","id."+idAction);
 					 
 		actionElement.addContent(actionRelation);
@@ -863,7 +852,7 @@ System.out.println(((ASTIfStatement)astStatement).toString());
 		actionRelation.setAttribute("id", "id."+idCount, xmi);
 		idCount++;
 		actionRelation.setAttribute("type", "action:FalseFlow", xmi);
-//actionRelation.setAttribute("to", "id."+(idAction+1));//TODO calcular a dónde va
+//actionRelation.setAttribute("to", "id."+(idAction+1));//TODO calcular a dÃ³nde va
 		actionRelation.setAttribute("from","id."+idAction);
 		
 		actionElement.addContent(actionRelation);
@@ -904,7 +893,7 @@ System.out.println(((ASTIfStatement)astStatement).toString());
 		documentJDOM.addContent(segmento);
 		// Vamos a serializar el XML  
 		// Lo primero es obtener el formato de salida  
-		// Partimos del "Formato bonito", aunque también existe el plano y el compacto  
+		// Partimos del "Formato bonito", aunque tambiÃ©n existe el plano y el compacto  
 		Format format = Format.getPrettyFormat();  
 		// Creamos el serializador con el formato deseado  
 		XMLOutputter xmloutputter = new XMLOutputter(format);  
